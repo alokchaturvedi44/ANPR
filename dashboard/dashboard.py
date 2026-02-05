@@ -1,17 +1,20 @@
+import os
+from dotenv import load_dotenv
 import streamlit as st
 from pymongo import MongoClient
 import pandas as pd
 from datetime import date
 
-st.set_page_config(page_title="Gate Vehicle Log Dashboard", layout="wide")
+load_dotenv()
+mongo_uri = os.getenv("MONGO_URI")
+client = MongoClient(mongo_uri)
 
-# client = MongoClient("mongodb+srv://chaturvedialok44_db_user:FxHFDZZKMacwuohR@cluster0.thvr1so.mongodb.net/?appName=Cluster0")
-client = MongoClient("mongodb+srv://chaturvedialok44_db_user:sDDTLmBMSTwEhh9C@cluster0.bgcmtgp.mongodb.net/?appName=Cluster0")
+st.set_page_config(page_title="Gate Vehicle Log Dashboard", layout="wide")
 db = client["gate_db"]
 logs = db["vehicle_logs"]
 
-VALID_USERNAME = "chaturvedialok44"
-VALID_PASSWORD = "Alok@2727"
+VALID_USERNAME = os.getenv("DASHBOARD_USERNAME")
+VALID_PASSWORD = os.getenv("DASHBOARD_PASSWORD")
 
 if "authenticated" not in st.session_state:
     st.session_state.authenticated = False

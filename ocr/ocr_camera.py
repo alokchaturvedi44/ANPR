@@ -4,9 +4,12 @@ import easyocr
 from pymongo import MongoClient
 from datetime import datetime
 import re
+import os
+from dotenv import load_dotenv
 
-# client = MongoClient("mongodb+srv://chaturvedialok44_db_user:FxHFDZZKMacwuohR@cluster0.thvr1so.mongodb.net/?appName=Cluster0")
-client = MongoClient("mongodb+srv://chaturvedialok44_db_user:sDDTLmBMSTwEhh9C@cluster0.bgcmtgp.mongodb.net/?appName=Cluster0")
+load_dotenv()
+client = MongoClient(os.getenv("MONGO_URI"))
+
 db = client["gate_db"]
 logs = db["vehicle_logs"]
 
