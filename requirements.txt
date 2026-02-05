@@ -1,0 +1,6 @@
+ultralytics
+opencv-python
+easyocr
+pymongo
+streamlit
+pandas
