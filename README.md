@@ -2,7 +2,7 @@
 
 A real-time system designed to detect vehicle license plates using YOLO, extract text via EasyOCR, and log the entry/exit data into a MongoDB database.
 
-## 🚀 Features
+## Features
 - **Real-time Detection:** Uses YOLOv8 for high-speed plate localization.
 - **OCR Engine:** Powered by EasyOCR for accurate text extraction.
 - **Database Integration:** Automatic logging of plate numbers, timestamps, and status (IN/OUT).
@@ -13,12 +13,12 @@ A real-time system designed to detect vehicle license plates using YOLO, extract
    **Data Export:** Capability to download filtered logs as CSV for reporting.   
    **Visual Analytics:** Daily entry count charts for trend analysis.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Language:** Python 3.11
 - **Frameworks:** Streamlit, PyMongo, Ultralytics (YOLO)
 - **Database:** MongoDB Atlas
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 1. **Clone the repo:**
    ```bash
@@ -27,11 +27,15 @@ A real-time system designed to detect vehicle license plates using YOLO, extract
 
 2. **Install Dependencies:**
    ```bash
-      pip install -r requirements.txt
+   pip install -r requirements.txt
+   
 3. **Configure Environment Variables: Create a .env file in the root directory:**
    ```bash
-      MONGO_URI=mongodb+srv://your_user:your_password@cluster.mongodb.net/?appName=Cluster0
+   MONGO_URI=mongodb+srv://your_user:your_password@cluster.mongodb.net/?appName=Cluster0
+   DASHBOARD_USERNAME=<your_username>
+   DASHBOARD_PASSWORD=<your_password>
+   
 4. **Run the Application:**
    ```bash
-      python app.py
+   python app.py
 
