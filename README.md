@@ -1,4 +1,4 @@
-# ANPR 2 - Automatic Number Plate Recognition
+# ANPR - Automatic Number Plate Recognition
 
 A real-time system designed to detect vehicle license plates using YOLO, extract text via EasyOCR, and log the entry/exit data into a MongoDB database.
 
