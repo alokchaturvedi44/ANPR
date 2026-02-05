@@ -8,9 +8,13 @@ A real-time system designed to detect vehicle license plates using YOLO, extract
 - **Database Integration:** Automatic logging of plate numbers, timestamps, and status (IN/OUT).
 - **Live Monitoring Dashboard:** A Streamlit-based interface providing:
      **Advanced Filtering:** Search by specific plate numbers or filter by date.
+  
      **Inside Vehicles Tracking:** A dedicated view to see which vehicles are currently on the premises.
+  
      **Analytics Summary:** Real-time counters for total records, unique plates, and current "IN" status counts.
-     **Data Export:** Capability to download filtered logs as CSV for reporting.   
+  
+     **Data Export:** Capability to download filtered logs as CSV for reporting.
+  
      **Visual Analytics:** Daily entry count charts for trend analysis.
 
 ## Tech Stack
