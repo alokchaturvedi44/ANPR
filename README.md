@@ -7,15 +7,11 @@ A real-time system designed to detect vehicle license plates using YOLO, extract
 - **OCR Engine:** Powered by EasyOCR for accurate text extraction.
 - **Database Integration:** Automatic logging of plate numbers, timestamps, and status (IN/OUT).
 - **Live Monitoring Dashboard:** A Streamlit-based interface providing:
-     **Advanced Filtering:** Search by specific plate numbers or filter by date.
-  
-     **Inside Vehicles Tracking:** A dedicated view to see which vehicles are currently on the premises.
-  
-     **Analytics Summary:** Real-time counters for total records, unique plates, and current "IN" status counts.
-  
-     **Data Export:** Capability to download filtered logs as CSV for reporting.
-  
-     **Visual Analytics:** Daily entry count charts for trend analysis.
+     1. **Advanced Filtering:** Search by specific plate numbers or filter by date.
+     2. **Inside Vehicles Tracking:** A dedicated view to see which vehicles are currently on the premises.
+     3. **Analytics Summary:** Real-time counters for total records, unique plates, and current "IN" status counts.
+     4. **Data Export:** Capability to download filtered logs as CSV for reporting.
+     5. **Visual Analytics:** Daily entry count charts for trend analysis.
 
 ## Tech Stack
 - **Language:** Python 3.11
@@ -32,6 +28,7 @@ A real-time system designed to detect vehicle license plates using YOLO, extract
 2. **Install Dependencies:**
    ```bash
    pip install -r requirements.txt
+   pip install python-dotenv
    
 3. **Configure Environment Variables: Create a .env file in the root directory:**
    ```bash
