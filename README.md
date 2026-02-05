@@ -22,7 +22,7 @@ A real-time system designed to detect vehicle license plates using YOLO, extract
 
 1. **Clone the repo:**
    ```bash
-   git clone [https://github.com/alokchaturvedi44/ANPR.git](https://github.com/alokchaturvedi44/ANPR.git)
+   git clone https://github.com/alokchaturvedi44/ANPR.git
    cd ANPR
 
 2. **Install Dependencies:**
