@@ -7,7 +7,8 @@ def run_ocr():
     os.system(f'"{PY}" ocr/ocr_camera.py')
 
 def run_dashboard():
-    os.system("streamlit run dashboard/dashboard.py")
+    # os.system("streamlit run dashboard/dashboard.py")
+    os.system(f"{sys.executable} -m streamlit run dashboard/dashboard.py")
 
 def test_db():
     os.system(f'"{PY}" database/db_test.py')
